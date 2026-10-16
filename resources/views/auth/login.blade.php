@@ -14,7 +14,7 @@
     <form class="login-card" method="POST" action="{{ route('login.attempt') }}">
         @csrf
         <div class="logo"><svg class="i"><use href="#i-bowl"/></svg></div>
-        <h1>MealBowl 123</h1>
+        <h1>MealBowl</h1>
         <p class="sub">Aplikasi Laporan Penjualan<br>Silakan masuk untuk melanjutkan</p>
 
         @if($errors->any())
