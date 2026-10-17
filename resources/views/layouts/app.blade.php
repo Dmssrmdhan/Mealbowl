@@ -23,8 +23,11 @@
             <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">
                 <svg class="i"><use href="#i-home"/></svg> Dashboard
             </a>
-            <a href="{{ route('sales.create') }}" class="{{ request()->routeIs('sales.*') ? 'active' : '' }}">
+            <<a href="{{ route('sales.create') }}" class="{{ request()->routeIs('sales.create') ? 'active' : '' }}">
                 <svg class="i"><use href="#i-edit"/></svg> Input Penjualan
+            </a>
+            <a href="{{ route('sales.index') }}" class="{{ request()->routeIs('sales.index') ? 'active' : '' }}">
+                <svg class="i"><use href="#i-list"/></svg> Riwayat Transaksi
             </a>
             <a href="{{ route('menus.index') }}" class="{{ request()->routeIs('menus.*') ? 'active' : '' }}">
                 <svg class="i"><use href="#i-list"/></svg> Daftar Menu
